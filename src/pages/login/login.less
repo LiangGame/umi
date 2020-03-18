@@ -1,0 +1,52 @@
+.login_content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url("~@/assets/svg/loginBg.svg") no-repeat center 110px;
+  background-size: 100%;
+  overflow: auto;
+}
+.header_content {
+  height: 72px;
+  padding: 24px 40px 0;
+  .language {
+    font-size: 18px;
+  }
+}
+.main_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1;
+  padding: 32px 0;
+  .header {
+    font-family: Avenir,Helvetica Neue,Arial,Helvetica,sans-serif;
+    font-size: 33px;
+    font-weight: 600;
+    height: 44px;
+    line-height: 44px;
+    margin: 0;
+  }
+  .description {
+    margin: 12px 0 40px;
+  }
+  .form_content {
+    width: 368px;
+    margin: 0 auto;
+    :global {
+      .ant-input-prefix .anticon {
+        color: @primary-color;
+      }
+    }
+  }
+  .login_btn {
+    width: 100%;
+    margin: 24px 0 0;
+  }
+}
+
+.footer_content {
+  border-top: @border-color-base solid 1px;
+  text-align: center;
+  padding: 24px 0;
+}
